@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes em CSS</title>
+    <style>
+      body {
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 1em;
+        font-family: "Asap Condensed", sans-serif;
+        font: normal lighter 1em "Asap Condensed", sans-serif;
+        /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+
+            São recomendados px e em
+
+            16px geralmente é igual a 1em
+
+            lighter normal bold bolder
+
+            Variação numérica font-weight: 100-900
+            
+            Shorthand "font:"
+            font-style -> font-variant -> font-weight -> font-size -> font-family
+            */
+      }
+
+      h1 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 2em;
+        color: rgb(24, 97, 126);
+        text-align: center;
+      }
+
+      h2 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 1.5em;
+        color: rgb(33, 136, 161);
+        text-align: left;
+      }
+
+      p {
+        font: italic lighter 1em "Asap Condensed", sans-serif;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com Fontes</h1>
+    <p style="font-style: normal; font-weight: bold">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ad
+      reiciendis cum deserunt quo itaque optio neque cupiditate, commodi animi
+      repudiandae laudantium cumque, reprehenderit sit nemo iste, dolorem
+      corporis fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Cupiditate, expedita? Optio quidem vel quae nihil quas temporibus
+      praesentium fuga odit, sequi accusamus? Labore accusantium ratione
+      laudantium obcaecati fuga corrupti nostrum. Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Quo, dicta illo magni maiores fuga animi
+      assumenda similique facere tempore, necessitatibus quaerat! Commodi minima
+      suscipit harum optio nisi, pariatur quod adipisci.
+    </p>
+    <p style="font-style: normal; font-weight: bold">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore
+      illum, cumque amet natus esse eum consectetur, ipsam, ratione quisquam et
+      quas a dolorem suscipit blanditiis voluptatem ut! Quasi, doloremque?
+    </p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum non
+      suscipit provident eligendi amet maxime odit culpa quo sunt repellat
+      voluptate inventore corporis excepturi adipisci, at architecto maiores
+      dolores!
+    </p>
+  </body>
+</html>

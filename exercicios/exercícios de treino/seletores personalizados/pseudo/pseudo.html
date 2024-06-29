@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-classes e Pseudo-elementos</title>
+  </head>
+  <style>
+    body {
+      font: normal lighter 1em Arial, Helvetica, sans serif;
+    }
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: red;
+    }
+    a:visited { 
+         color: darkred;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: red;
+    }
+    .especial:hover{
+        color: white;
+        background-color: black;
+        text-decoration: none;
+    }
+    .especial::before{
+        content: '>>';
+        font-weight: lighter;
+    }
+    .especial::after{
+        content: '<<';
+        font-weight: lighter;
+    }
+    div > p {
+      display: none;
+    }
+    div:hover > p{
+      display: block;
+      background-color: yellow;
+      color: darkred;
+      font:  2em bold
+    }
+    div > .parafal{
+      display: none;
+    }
+    div:hover > .parafal{
+      display: block;
+      background-color: red;
+      color: darkgreen;
+
+    }
+   
+  </style>
+  <body>
+    <h1>Personalizando um link</h1>
+    <p>
+      Para aprender HTML5 e CSS3, acesse o
+      <a
+        href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf"
+        >PDF do Gustavo Guanabara</a
+      >
+    </p>
+    <p>
+      Se quiser conhecer mais sobre os padrões, visite o site do
+      <a href="https://www.w3c.br/conhecendo-o-w3c"
+        >Escritório do W3C no Brasil</a
+      >
+    </p>
+    <p>
+      Para acompanhar os cursos, acesse o
+      <a href="https://www.youtube.com/@CursoemVideo" class="especial"
+        >canal do CursoemVideo</a
+      >
+    </p>
+    <h1>Conteúdo Especial</h1>
+    <div>
+      Passe o mouse aqui
+      <p>CONGRATULATIONS!</p>
+    </div>
+    <p>Veja o conteúdo aparecendo!</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+      O milhior
+      <p class="parafal"> <img src="CR7.WEBP" alt="O milhior" > 
+        SIIUUUUUUUU!!!
+      </p>
+    </div>
+    
+  </body>
+</html>

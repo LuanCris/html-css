@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: blanchedalmond;
+        }
+        div > p{
+        
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            width: 300px;
+        }
+        div:hover {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse por cima do texto</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO!
+            <br>
+            Aproveite sua vida pois... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores exercitationem magnam rerum. Iure amet quia, accusamus est eum aliquam nam magni temporibus. Voluptate qui esse earum distinctio unde aliquam voluptatibus!
+        </p>
+
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

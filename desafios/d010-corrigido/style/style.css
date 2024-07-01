@@ -55,7 +55,7 @@ header > p{
   padding-right: 10px;
   padding-left: 10px;
   margin: auto;
-  margin-bottom: 20px;
+  padding-bottom: 50px;
   color: var(--cor00);
 }
 

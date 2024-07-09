@@ -3,9 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <title>Explicação Cap.19</title>
 </head>
+<style>
+    body{
+        background-image: url(images/wallpaper006.jpg);
+    }
+
+    div.block{
+        display: inline-block;
+        margin: 5px;
+        width: 300px;
+        height: 300px;
+        background-color: beige;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    div#q1{
+        background-color: blue;
+    }
+    div#q2{
+        background-image: -moz-linear-gradient(to bottom lightblue to blue );
+    }
+    div#q3{
+        background-image: url(images/pattern001.png);
+    }
+
+    div.outside1{
+        background-color: blue;
+        height: 40vh;
+        margin: 200px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        margin-left: 0%;
+    }
+    div.inside1{
+        background-color: blueviolet;
+        height: 100px;
+        width: 150px;
+    }
+    div.outside2{
+        background-color: blue;
+        height: 40vh;
+        margin: 200px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        margin-left: 0%;
+        position: relative;
+    }
+    div.inside2{
+        background-color: blueviolet;
+        height: 100px;
+        width: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+</style>
 <body>
-    <h1>Exercício de Teste</h1>
+    <h1>Imagem de Fundo</h1>
+    <div class="block" id="q1"></div>
+    <div class="block" id="q2"></div>
+    <div class="block" id="q3"></div>
+
+    <p>Não se esqueça, o body também é uma caixa, basta olhar para o plano de fundo deste site.</p>
+
+    
+        <h1>Personalizando a Aplicação do Background</h1>
+        <p>Para <strong>personalizar</strong> uma imagem pequena com relação dos eixos x e y basta utilizar os seguintes valores:
+            <div class="background-repeat">
+            <strong>background-repeat: repeat;</strong>
+            <strong>background-repeat: no-repeat;</strong>
+            <strong>background-repeat: repeat-x;</strong>
+            <strong>background-repeat: repeat-y;</strong>
+             </div>
+        </p>
+        <p>Também é possível programar quantas vezes deseja que a imagem se repita, e em qual <strong>posição</strong> da caixa em específico. Utiliza-se os valores:</p>
+            <div class="position">
+            <strong style="text-align: left;">left top; </strong> <strong style="text-align: center;">center top; </strong> <strong style="text-align: right;">right top; </strong>
+            <strong style="text-align: left;">left center; </strong> <strong style="text-align: center;">center center; </strong> <strong style="text-align: right;">right center; </strong>
+            <strong style="text-align: left;">left bottom; </strong> <strong style="text-align: center;">center bottom; </strong> <strong style="text-align: right;">right bottom; </strong>  
+            </div>
+        <p>Uma outra opção também é <strong>redimencionar</strong>. Utiliza-se a propriedade: <strong>background-size</strong></p>
+        <p>Os valores aceitos por essa propriedade são: <strong>auto; length px/%; cover; contain;.</strong></p>
+        <p>A última propriedade é o vínculo, ou melhor <strong>attachment</strong>. Uma das melhores opção quando o conteúdo está vazando para a vertical da página.</p>
+        <p>Ela aceita os valores: scroll; fixed;</p>    
+        <h1>Utilizando <strong>Shorthand</strong></h1>
+        <p>Ao invés de utilizar:
+            <br>
+            background-color: black;
+            <br>
+            background-image: url();
+            <br>
+            background-position: center center;
+            <br>
+            background-repeat: no repeat;
+            <br>
+            background-attachment: fixed;
+            <br>
+        </p>
+        <p>Utilize:
+            <br>..;
+            background: black url() center center no-repeat fixed;
+        </p>
+        
+        <h1>Centralizando Verticalmente um Contêiner</h1>
+        <p>Siga o exemplo...</p>
+        <p>Para criarmos o contêiner, vamos utilizar os seguintes conceitos em <strong>style</strong>:</p>
+        <p>
+            div.outside{
+                <br>
+                background-color: blue;
+                <br>
+                height: 40vh;
+                <br>
+                margin: 200px;
+                <br>
+                margin-top: 10px;
+                <br>
+                margin-bottom: 50px;
+                <br>
+                margin-left: 0%;
+                <br>
+            }
+            <br>
+            div.inside{
+                <br>
+                background-color: blueviolet;
+                <br>
+                height: 100px;
+                <br>
+                width: 150px;
+                <br>
+            }
+            <br>
+        </p>
+        <p>Vai ficar algo como...</p>
+        <div class="outside1">
+            <div class="inside1">
+            </div>
+        </div>
+        <p>Para centralizar o elemento de dentro do contêiner, vamos adicionar os seguintes conceitos:</p>
+        <p>
+            div.outside{
+                <br>
+                background-color: blue;
+                <br>
+                height: 40vh;
+                <br>
+                margin: 200px;
+                <br>
+                margin-top: 10px;
+                <br>
+                margin-bottom: 50px;
+                <br>
+                margin-left: 0%;
+                <br>
+                position: relative;
+                <br>
+            }
+            <br>
+            div.inside{
+                <br>
+                background-color: blueviolet;
+                <br>
+                height: 100px;
+                <br>
+                width: 150px;
+                <br>
+                position: absolute;
+                <br>
+                top: 50%;
+                <br>
+                left: 50%;
+                <br>
+                transform: translate(-50%, -50%);
+                <br>
+            } 
+            <br>
+        </p>
+        <p>Segue o resultado...</p>
+        <div class="outside2">
+            <div class="inside2">
+            </div>
+        </div>
+
 </body>
 </html>

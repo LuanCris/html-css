@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de um Site com Fundo</title>
+    <title>Teste de um Site Fundo Fixo</title>
     <style>
         body{
+            /*
             height: 97.6vh;
             background-color: rgb(0, 157, 255);
             background-image: url(images/wallpaper002.jpg);
@@ -13,12 +14,23 @@
             background-position: center center;
             background-size: cover;
             background-attachment: fixed;
-            background: rgb(0, 157, 255) url(images/wallpaper002.jpg) no-repeat center center cover fixed;
+            */
+            background: rgb(0, 157, 255) url(images/wallpaper002.jpg) no-repeat center center  fixed;
+            background-size: cover;
+            /*
+            shorthand order:
+                color > image > position > repeat > [size] > attachment.
+            */
+            /*
+            background-size it's not working, this is because it's far in bottom.
+            */
+
         }
         
         main{
             background-color: white;
-            width: 400px;
+            max-width: 800px;
+            min-width: 170px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
@@ -42,6 +54,29 @@
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ullam soluta fuga? Incidunt pariatur quisquam odio dicta maxime beatae, molestias necessitatibus nulla sapiente ratione. Cupiditate quisquam asperiores impedit distinctio error.
         </p>
+
+        <h1>Fundo Fixo ao Rolar</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste ea, dolores cumque aspernatur quo quisquam assumenda maiores nisi impedit, architecto atque voluptatibus ipsum molestiae aperiam et? Quibusdam fugit sint aliquam.
+        
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus ad cupiditate voluptatum voluptas delectus culpa modi officiis dignissimos expedita aut veritatis et nam vitae quos magnam aliquam, iure alias! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates voluptatum ipsam debitis veniam eum, voluptate perspiciatis, non mollitia ea quibusdam explicabo cum illo deleniti. Alias quam voluptatum neque debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum culpa commodi quod explicabo, eius vitae voluptatem fugit a, at veritatis corrupti eveniet ut! Quos odit magnam non, dolorum quo ipsum!
+
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam neque sequi beatae. Deleniti esse ut ex animi iusto vero architecto maxime, eius in a explicabo sed sit earum eaque saepe!
+
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellendus quod fugit quae veritatis commodi molestiae dignissimos est dicta non, ducimus laudantium, cumque mollitia culpa in? Temporibus officiis nulla libero.
+
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos corporis, deleniti animi magni reiciendis incidunt culpa repellat esse laboriosam similique et ratione quia doloribus ut aspernatur repellendus necessitatibus praesentium perferendis.
+
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illo laboriosam vero, esse nisi laborum possimus consequuntur natus amet at, officia vel. Amet distinctio neque qui possimus exercitationem eius quas? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quos veniam, esse ipsum nobis, reiciendis voluptates ut culpa delectus, hic at fugiat itaque voluptatibus doloremque quas aperiam corporis assumenda numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore temporibus reprehenderit, magni delectus dolorem dolor doloremque cupiditate ad sequi laudantium voluptate ullam suscipit ab accusantium. Quos, excepturi nemo! Cumque!</p>
     </main>
 </body>
 </html>

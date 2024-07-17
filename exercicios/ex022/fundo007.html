@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+
+        #conteiner{
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            background-color: indigo;
+            height: 94.6vh;
+            padding: 10px;
+        }
+
+        #conteudo{
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+            
+            position: absolute;
+            background-color: deepskyblue;
+            height: 200px;
+            width: 400px;
+            
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .top{
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+            text-decoration: none;
+
+            position: absolute;
+            background-color: yellow;
+            height: 90px;
+            width: 130px;
+
+            left: 200px;
+            top: -45px;
+            transform: translate(-50%, -50%);
+        }
+        .top:hover{
+            background-color: darkgoldenrod;
+        }
+        .bottom{
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+            text-decoration: none;
+
+            position: absolute;
+            background-color: greenyellow;
+            height: 90px;
+            width: 130px;
+
+            left: 200px;
+            top: 245px;
+            transform: translate(-50%, -50%);
+        }
+        .bottom:hover{
+            background-color: green;
+        }
+        .right{
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+            text-decoration: none;
+
+            position: absolute;
+            background-color: red;
+            height: 90px;
+            width: 130px;
+
+            left: 465px;
+            top: 100px;
+            transform: translate(-50%, -50%);
+        }
+        .right:hover{
+            background-color: darkred;
+        }
+        .left{
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+            text-decoration: none;
+
+            position: absolute;
+            background-color: blue;
+            height: 90px;
+            width: 130px;
+
+            left: -65px;
+            top: 100px;
+            transform: translate(-50%, -50%);
+        }
+        .left:hover{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+            <aside class="top">
+            </aside>
+
+            <aside class="bottom">
+            </aside>
+
+            <aside class="right">
+            </aside>
+
+            <aside class="left">
+            </aside>
+
+        </article>
+    </section>
+    
+</body>
+</html>

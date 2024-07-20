@@ -1,0 +1,46 @@
+1
+import
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+CL:wght@100..400&display=swap');
+
+ .font{
+      font-family: "Playwrite AU NSW", cursive;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    }
+</style>
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+CL:wght@100..400&display=swap" rel="stylesheet">
+
+.font{
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+2
+import
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.font2{
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+link
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+font-family: "Righteous", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+   

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+CL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root{
+    --color-1: white;
+    --color-2: deepskyblue;
+    --color-3: rgb(0, 0, 99);
+    --color-4: gray;
+
+    --font-auto:  "Playwrite AU NSW", cursive;
+    --font-destaque:   "Righteous", sans-serif;
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: var(--color-4);
+    font-family: var(--font-auto);
+    font-weight: bold;
+    
+}
+
+header{
+    background-color: var(--color-3);
+    min-height: 150px;
+    padding-top: 60px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+    
+}
+
+header h1{
+    color: var(--color-1); 
+    font-family: var(--font-destaque);
+    font-size: 3.7em;
+    text-align: center;
+}
+
+header p{
+   color: var(--color-1);
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 1em;
+   padding-top: 10px;
+   text-align: center; 
+}
+
+header p a{
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+header p a:hover{
+    color: var(--color-2);
+    text-decoration: underline;
+}
+
+main{
+    background-color: var(--color-1);
+    font-size:1.2em ;
+    padding: 20px 50px 20px 5px;
+    text-align: left;
+    line-height: 2.6em;
+    max-width: 98vh;
+}
+
+main article{
+    padding: 40px 100px 40px 10px;
+    
+}

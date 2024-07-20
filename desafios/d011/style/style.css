@@ -4,9 +4,9 @@
 
 :root{
     --color-1: white;
-    --color-2: deepskyblue;
-    --color-3: rgb(0, 0, 99);
-    --color-4: gray;
+    --color-2: lightgray;
+    --color-3: black;
+    --color-4: rgba(0, 0, 0, 0.310);
 
     --font-auto:  "Playwrite AU NSW", cursive;
     --font-destaque:   "Righteous", sans-serif;
@@ -14,12 +14,13 @@
 
 
 *{
+    background-size: cover;
     margin: 0%;
     padding: 0%;
 }
 
 body{
-    background-color: var(--color-4);
+    background-color: var(--color-1);
     font-family: var(--font-auto);
     font-weight: bold;
     
@@ -30,16 +31,13 @@ header{
     min-height: 150px;
     padding-top: 60px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
-    
 }
-
 header h1{
     color: var(--color-1); 
     font-family: var(--font-destaque);
     font-size: 3.7em;
     text-align: center;
 }
-
 header p{
    color: var(--color-1);
    font-family: Arial, Helvetica, sans-serif;
@@ -49,27 +47,74 @@ header p{
    padding-top: 10px;
    text-align: center; 
 }
-
 header p a{
     color: var(--color-1);
     text-decoration: none;
 }
-
 header p a:hover{
     color: var(--color-2);
     text-decoration: underline;
 }
 
 main{
-    background-color: var(--color-1);
     font-size:1.2em ;
-    padding: 20px 50px 20px 5px;
+    padding: 0px;
     text-align: left;
     line-height: 2.6em;
-    max-width: 98vh;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.310);
+}
+main article{
+    background-color: var(--color-1);
+    padding: 40px 0px 40px 3px;
+    max-width: 83vh;
+    min-width: 170px;
+   
+}
+section{
+    background-color: var(--color-4);
+    color: var(--color-1);
+    max-width: 83vh;
+    min-width: 170px;
 }
 
-main article{
-    padding: 40px 100px 40px 10px;
-    
+.bluesky{
+    background-image: url(../images/Cloud\ Blue\ Sky\ Photo\ Shoot\ Backdrop\ MA10.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 40px 0px 40px 3px;
+}
+.redsky{
+    background-image: url(../images/photorealistic-style-clouds.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 40px 0px 40px 3px;
+}
+.children{
+    background-image: url(../images/little-boy-runs-green-field.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 40px 0px 40px 3px;
+}
+
+footer{
+    background-color: var(--color-3);
+    color: var(--color-1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+footer a{
+    color: var(--color-1);
+    text-decoration: none;
+
+}
+footer a:hover{
+    color: var(--color-2);
+    text-decoration: underline;
 }

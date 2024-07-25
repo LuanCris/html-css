@@ -1,120 +1,107 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+CL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 :root{
     --color-1: white;
-    --color-2: lightgray;
+    --color-2: rgb(109, 109, 254);
     --color-3: black;
     --color-4: rgba(0, 0, 0, 0.310);
 
-    --font-auto:  "Playwrite AU NSW", cursive;
+    --font-html: Arial, Helvetica, sans-serif;
+    --font-auto:  "Handlee", cursive;
     --font-destaque:   "Righteous", sans-serif;
 }
 
 
 *{
-    background-size: cover;
     margin: 0%;
     padding: 0%;
 }
 
-body{
-    background-color: var(--color-1);
-    font-family: var(--font-auto);
-    font-weight: bold;
-    
+html, body{
+    font-family: var(--font-html);
+    min-height: 100vh;
+    background-color: lightslategray;
 }
 
 header{
     background-color: var(--color-3);
-    min-height: 150px;
-    padding-top: 60px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
-}
-header h1{
-    color: var(--color-1); 
-    font-family: var(--font-destaque);
-    font-size: 3.7em;
+    color: var(--color-1);
     text-align: center;
 }
-header p{
-   color: var(--color-1);
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: bold;
-   font-style: normal;
-   font-size: 1em;
-   padding-top: 10px;
-   text-align: center; 
+header h1{
+    font-family: var(--font-destaque);
+    font-size: 9.5vw;
+    padding-top: 60px;
+    font-variant: small-caps;
 }
-header p a{
+header p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 60px; 
+}
+header a, footer a{
     color: var(--color-1);
     text-decoration: none;
 }
-header p a:hover{
+header a:hover, footer a:hover{
     color: var(--color-2);
     text-decoration: underline;
 }
 
-main{
-    font-size:1.2em ;
-    padding: 0px;
-    text-align: left;
-    line-height: 2.6em;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.310);
-}
-main article{
-    background-color: var(--color-1);
-    padding: 40px 0px 40px 3px;
-    max-width: 83vh;
-    min-width: 170px;
-   
-}
 section{
-    background-color: var(--color-4);
+    font-family: var(--font-auto);
+    font-size: 3.5vw;
+    font-weight: bold;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    padding-right: 150px;
+    line-height: 2em;
+}
+.nrml{
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+.img{
+    background-color: darkgrey;
     color: var(--color-1);
-    max-width: 83vh;
-    min-width: 170px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473) ;
+}
+.img p{
+    background-color: var(--color-4);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px var(--color-3);
+
 }
 
-.bluesky{
-    background-image: url(../images/Cloud\ Blue\ Sky\ Photo\ Shoot\ Backdrop\ MA10.jpg);
+#img01{
+    background-image: url(../images/earth-6578628_1280.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center center;
     background-size: cover;
-    padding: 40px 0px 40px 3px;
 }
-.redsky{
-    background-image: url(../images/photorealistic-style-clouds.jpg);
+#img02{
+    background-image: url(../images/clouds-3353159_1280.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: left right;
     background-size: cover;
-    padding: 40px 0px 40px 3px;
 }
-.children{
-    background-image: url(../images/little-boy-runs-green-field.jpg);
+#img03{
+    background-image: url(../images/planet-4124063_1280.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center center;
     background-size: cover;
-    padding: 40px 0px 40px 3px;
 }
 
 footer{
     background-color: var(--color-3);
     color: var(--color-1);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.0em;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 10px;
     text-align: center;
-}
-
-footer a{
-    color: var(--color-1);
-    text-decoration: none;
-
-}
-footer a:hover{
-    color: var(--color-2);
-    text-decoration: underline;
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela's play</title>
+    <style>
+        body{
+            margin: auto;
+            text-align: center;
+        }
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 400px;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+        tr, td{
+            color: white;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        tr:nth-child(2n){
+            background-color: darkolivegreen;
+        }
+        tr:nth-child(odd){
+            background-color: rgb(96, 96, 96);
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td rowspan="2">A</td>
+            <td colspan="2">B</td>
+        </tr> 
+        <tr>
+
+            <td rowspan="2">E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td rowspan="">I</td>
+        </tr>
+        <tr>
+            <td colspan="3">J</td>
+
+        </tr>
+
+    </table>
+</body>
+</html

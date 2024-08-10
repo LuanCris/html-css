@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+        }
+
+        h1{
+            margin: auto;
+            margin-top: 10px;
+            text-align: center;
+        }
+        p{
+            background-color: rgb(185, 185, 255);
+            border-radius: 0px 6px;
+            padding: 20px;
+            margin: 40px;
+            text-indent: 1.5em;
+            text-align: justify;
+
+        }
+
+        table{
+            border-collapse:collapse ;
+            margin: auto;
+            width: 500px;
+            margin-bottom: 100px ;
+        }
+
+        tr, th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        .only{
+            background-color: rgb(105, 105, 251);
+        }
+
+        #container{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create an Responsive Table</h1>
+
+    <p>Note: In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" or auto is set). A responsive table will display a horizontal scroll bar if the screen is too small to display the full content. Resize the browser window to see the effect:</p>
+
+    <div id="container">
+        <table>
+            <thead>
+                <tr class="only">
+                    <th>Products</th>
+                    <th>January</th>
+                    <th>February</th>
+                    <th>March</th>
+                    <th>April</th>
+                    <th>May</th>
+                    <th>June</th>
+                    <th>July</th>
+                    <th>August</th>
+                    <th>September</th>
+                    <th>October</th>
+                    <th>November</th>
+                    <th>December</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Smartphone Xiaomi</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td> Sony Radio</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>PS5 Dualsense</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>LougiTec Mouse </td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td> Aple Desktop</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Xbox Series Dualshok</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Acer Predator Desktop</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>LG Tv '42</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Aple Airpods</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Samsung Tv 52'</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Samsung Smartphone</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Nokia Smartphone</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>OG Line Filter</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Xbox Headset</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Motorolla Headset</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>OG USB C Type </td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Toshiba Tv '25</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>OG USB Micro B</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Raiser Headset</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Lenovo Desktop</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Aple Smartphone</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>38</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>21</td>
+                    <td>54</td>
+                    <td>49</td>
+                    <td>50</td>
+                    <td>48</td>
+                    <td>45</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

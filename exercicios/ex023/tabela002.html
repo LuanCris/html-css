@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades Federativas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        table{
+            border: 1px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+            width: 450px;
+            margin: auto;
+            margin-bottom: 100px;
+            position: relative;
+        }
+        caption{
+            background-color:rgba(255, 183, 0, 0.355);
+            
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody  tr:nth-child(even){ /* 2n-1n */
+            background-color: rgb(232, 232, 232);
+        }
+        tbody  tr:nth-child(odd){ /* 2n */
+            background-color: lightgrey;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .m-strong{
+            font-weight: bolder;
+            text-align: right;
+        }
+        .number{
+            text-align: right;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>
+            População Nacional 2024
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">
+                    Unidade federativa
+                </th>
+                <th scope="col">
+                    Sede de governo
+                </th>
+                <th scope="col">
+                    População
+                </th>
+            </tr>
+        </thead>
+        <tfoot id="onerow" >
+            <tr>
+                <th scope="row" style="width: 300px;">
+                    Soma de todos os dados
+                </th>
+                <th style="width: 170px;">
+                  Total  
+                </th>
+                <td class="m-strong">
+                    219.950.005
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>
+                    Acre
+                </td>
+                <td>
+                    Rio Branco
+                </td>
+                <td class="number">
+                    830 018
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Alagoas
+                </td>
+                <td>
+                    Maceió
+                </td>
+                <td class="number">
+                    3 127 683
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Amapá
+                </td>
+                <td>
+                    Macapá
+                </td>
+                <td class="number">
+                    733 759
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Amazonas
+                </td>
+                <td>
+                    Manaus
+                </td>
+                <td class="number">
+                    3 941 613
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bahia
+                </td>
+                <td>
+                    Salvador
+                </td>
+                <td class="number">
+                    14 141 626
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ceará
+                </td>
+                <td>
+                    Fortaleza
+                </td>
+                <td class="number">
+                    8 794 957
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Distrito Federal
+                </td>
+                <td>
+                    Brasília
+                </td>
+                <td class="number">
+                    2 817 381
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Espírito Santo
+                </td>
+                <td>
+                    Vitória
+                </td>
+                <td class="number">
+                    3 833 712
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Goiás
+                </td>
+                <td>
+                    Goiânia
+                </td>
+                <td class="number">
+                    7 056 495
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Maranhão
+                </td>
+                <td>
+                    São Luís
+                </td>
+                <td class="number">
+                    6 755 805
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mato Grosso
+                </td>
+                <td>
+                    Cuiabá
+                </td>
+                <td class="number">
+                    3 658 649
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mato Grosso do Sul
+                </td>
+                <td>
+                    Campo Grande
+                </td>
+                <td class="number">
+                    2 757 013
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Minas Gerais
+                </td>
+                <td>
+                    Belo Horizonte
+                </td>
+                <td class="number">
+                    20 539 989
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pará 
+                </td>
+                <td>
+                    Belém
+                </td>
+                <td class="number">
+                    8 121 025
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Paraíba
+                </td>
+                <td>
+                    João Pessoa 
+                </td>
+                <td class="number">
+                    3 974 687
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Paraná
+                </td>
+                <td>
+                    Curitiba
+                </td>
+                <td class="number">
+                    11 444 380
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Pernambuco
+                </td>
+                <td>
+                    Recife
+                </td>
+                <td class="number">
+                    9 058 931
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Piauí
+                </td>
+                <td>
+                    Teresina
+                </td>
+                <td class="number">
+                    3 271 199
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rio de Janeiro
+                </td>
+                <td>
+                    Rio de janeiro
+                </td>
+                <td class="number">
+                    16 055 174
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rio Grande do Norte
+                </td>
+                <td>
+                    Natal
+                </td>
+                <td class="number">
+                    3 302 729
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rio Grande do Sul
+                </td>
+                <td>
+                    Porto Alegre
+                </td>
+                <td class="number">
+                    11 882 965
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rondônia 
+                </td>
+                <td>
+                    Porto Velho
+                </td>
+                <td class="number">
+                    1 581 196
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Roraima
+                </td>
+                <td>
+                    Boa Vista 
+                </td>
+                <td class="number">
+                    636 707
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Santa Catarina 
+                </td>
+                <td>
+                    Florianópolis
+                </td>
+                <td class="number">
+                    7 610 361
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    São Paulo
+                </td>
+                <td>
+                    São Paulo
+                </td>
+                <td class="number">
+                    44 411 238
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sergipe
+                </td>
+                <td>
+                    Aracaju
+                </td>
+                <td class="number">
+                    2 210 004
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tocantins
+                </td>
+                <td>
+                    Palmas
+                </td>
+                <td class="number">
+                    1 511 460
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>
+        Lorem's criadas para confirmar funcionalidade do Projeto
+    </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consectetur eaque harum quas, aliquid nulla. Repellat incidunt, sunt aspernatur reprehenderit cum dolore temporibus voluptatibus est? Quibusdam at aliquam nisi ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nobis adipisci cupiditate repellendus sunt facere consectetur nulla quidem veniam a excepturi doloribus incidunt totam itaque sequi, officiis in, fugit rerum?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam modi ex ducimus nisi maiores architecto eos corporis quod quidem? Perferendis illum voluptate in? Commodi natus vel voluptas officiis quod doloribus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nulla. Adipisci consectetur maiores libero, eveniet enim sint similique non, quam nam temporibus nobis exercitationem dolorem illum odit laudantium perferendis a! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sunt facere explicabo, dolore debitis laudantium necessitatibus quam omnis eos at possimus quos fugiat error nemo, cum ex atque beatae. Aperiam?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure consectetur tempora impedit. Eligendi architecto quaerat aut optio. Tempore cum facilis similique fugiat debitis deserunt incidunt. Necessitatibus est nostrum vel omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ex deleniti, officiis amet fuga facere dicta officia minima accusamus perferendis similique repellendus quo consectetur provident veritatis quisquam odit. Aspernatur, aut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore expedita quo. Est beatae quaerat eum vero reprehenderit. Quis debitis quaerat pariatur distinctio voluptatem inventore repellendus repellat magni, hic quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores id eos dignissimos ipsam! Fugiat veniam voluptas saepe quidem officia quos quibusdam, necessitatibus deserunt minima illo, modi dolores delectus consequatur beatae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure a repudiandae itaque repellendus assumenda quas voluptatem numquam neque quasi dolore, sit reiciendis tempora saepe ipsum minima dolorem ullam necessitatibus maxime? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus expedita id, ea repellendus eum nobis aliquam? Cupiditate sed esse fuga nam maxime rem non quae laboriosam, quas ratione corrupti.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque repellat mollitia dolore consectetur, veritatis saepe sequi! Veritatis ipsa laudantium dolore magnam! Fugiat optio magnam adipisci omnis, voluptate libero commodi minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga tenetur voluptatum. Porro doloremque inventore, voluptas itaque quos sapiente facilis enim animi harum, dicta neque vitae praesentium ipsam officiis quaerat!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis dolor saepe deleniti repellat error a similique aliquam placeat accusamus alias sapiente nostrum iure, eos magnam laborum, quibusdam corporis blanditiis. Quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod perferendis culpa dicta eos quis, ipsum pariatur inventore voluptates architecto iusto, rem, sunt libero fugiat repudiandae. Laudantium a ratione perferendis?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sed aliquam at nostrum. Ut totam cumque deleniti excepturi quidem eaque libero nobis rem nemo, eius suscipit provident facere, laborum atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi alias quaerat, nam amet incidunt fugiat accusantium perferendis minima laudantium ipsum aliquid deleniti, numquam dolore veritatis est dolores autem culpa laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, eum ullam molestiae quam vero omnis sit optio rerum, maiores iusto eos fuga. Eveniet iusto repellendus dolorem aut in voluptates dicta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati incidunt nam laborum doloribus est repellendus magni optio voluptatibus. In deleniti adipisci velit commodi at exercitationem reiciendis error rem corporis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis nesciunt eveniet expedita assumenda vitae culpa atque, vel aliquid accusamus cupiditate libero voluptas illum accusantium dolore reiciendis. Dignissimos nisi nulla maxime.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora obcaecati aperiam minus fugit unde nesciunt at, nisi, qui nihil numquam odio reprehenderit eum, ab libero repellendus! Pariatur debitis suscipit quia!</p>
+</body>
+</html>

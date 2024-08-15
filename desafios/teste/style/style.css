@@ -70,15 +70,15 @@ header {
 
 header h1 {
   font-family: var(--fonte-histoica-1);
-  font-size: 3.2em;
+  font-size: 3.3em;
   font-weight: bolder;
-  padding: 20px 20px 5px 20px;
+  padding: 0px 10px 0px 10px;
 }
 
 header p {
   font-family: var(--fonte-destaque);
   font-size: 1.1em;
-  padding: 20px 20px 30px 20px;
+  padding: 20px 10px 30px 10px;
 }
 
 body {
@@ -98,17 +98,17 @@ main {
 }
 
 main img {
-  max-width: 460px;
-  min-width: 100px;
-  
-  margin:auto;
+  max-width: 600px;
+  min-width: 200px;
+  margin: auto;
   display: block;
+ 
 }
 
 main article h2 {
   color: var(--cor05);
   font-family: var(--fonte-histoica-2);
-  font-size: 1.2;
+  font-size: 1.4em;
   font-weight: 600;
   margin: 10px;
   margin-bottom: 0%;
@@ -121,7 +121,7 @@ main article p {
   text-align: justify;
   text-indent: 2em;
   padding: 5px 0px 5px 0px;
-  margin: 20px;
+  margin: 10px;
   line-height: 1.5em;
 }
 
@@ -149,12 +149,9 @@ aside{
   color: var(--cor05);
   font-family: var(--fonte-destaque);
   font-size: 0.90em;
-  margin: 50px auto;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin: 50px 20px 40px 20px;
   padding: 20px;
-  padding-top: 0%;
-  padding-bottom: 0px;
+  padding-bottom: 0%;
   border-radius: 10px;
   box-shadow: var(--sombracaixa-f);
 }

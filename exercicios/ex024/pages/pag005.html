@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            background-color: rgb(229, 233, 255);
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicked()">Click on me</a>
+    <div id="exit"></div>
+
+    <script>
+        function clicked() {
+            s = window.document.getElementById("exit")
+            s.innerHTML += '<p>You clicked!</p>'
+        }
+    </script>
+
+</body>
+</html>

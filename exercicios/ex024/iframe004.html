@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe Security</title>
+    <style>
+        body{
+            margin: auto;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        iframe{
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Complete the form</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, minima sunt ullam, quidem est nulla commodi, sapiente explicabo eaque nihil possimus eum blanditiis officiis ratione laudantium incidunt iusto consectetur perferendis?
+    </p>
+
+    <iframe
+     src="pages/pag004.html" sandbox="allow-forms allow-same-origin allow-scripts"  referrerpolicy="no-referrer">
+        Threre is no compatibility whith your browser
+    </iframe>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quaerat enim voluptates culpa nostrum vero velit ex est, accusantium nobis repellat, natus facere, dolore odit! Iste sit itaque animi qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum tempore a dolores nostrum nam vitae adipisci necessitatibus perferendis quis doloribus. Fugit, aliquid blanditiis expedita odit qui eos aperiam ratione.
+    </p>
+</body>
+</html>

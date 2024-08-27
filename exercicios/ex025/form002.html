@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form test</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: auto;
+        }
+
+        form{
+            background-color: rgb(212, 235, 255);
+            width: 400px;
+            padding: 25px;
+            margin: auto;
+            border: 2px solid snow;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form box models</h1>
+
+    <form action="register.php" method="post" autocomplete="on" target="_blank">
+        <p>
+            <label for="iuser">User:</label>
+            <input type="text" name="user" id="iuser" required minlength="12" maxlength="30" autocomplete="username" size="35" placeholder="Your name or nickname">
+        </p>
+        <p>
+            <label for="ipassword">Password:</label>
+            <input type="password" name="passwor" id="ipassword" required minlength="8" maxlength="12" autocomplete="current-password" size="14" placeholder="Your password">
+        </p>
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </p>
+    </form>    
+</body>
+</html>

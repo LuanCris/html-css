@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin: auto;
+            text-align: center;
+        }
+
+        form{
+            background-color: rgb(232, 232, 232);
+            margin: 30px 45px 30px 45px;
+            padding: 30px;
+            padding-top: 25px;
+            border-radius: 10px;
+            border: solid 1px gray;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.318);
+        }
+    </style>
+</head>
+<body>
+    <h1>Form controls</h1>
+        <form action="register.php" method="post">
+            <p>
+                <label for="iaverage">Average:</label>
+                <input type="number" name="average" id="iaverage" min="0" max="10" step=".2" placeholder="0 to 10" required>
+            </p>
+            <p>
+                <label for="iday">Test day:</label>
+                <input type="date" name="Day" id="iday" value="08-28-2024" required>
+            </p>
+            <p>
+                <label for="imonth">Test month:</label>
+                <input type="month" name="Month" id="imonth" value="08-2024" required>
+            </p>
+            <p>
+                <label for="itime">Test hour:</label>
+                <input type="time" name="time" id="itime" value="00:00" required>
+            </p>
+            <p>
+                <label for="iemail">e-mail:</label>
+                <input type="email" name="e-mail" id="iemail" placeholder="juninho09@outlook.com" size="30" minlength="15" required>
+            </p>
+            <p>
+                <label for="ipassword">Password:</label>
+                <input type="password" name="Password" id="ipassword" placeholder="Words, simbols and numbers" size="25" maxlength="25" minlength="8" >
+            </p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </form>
+</body>
+</html>

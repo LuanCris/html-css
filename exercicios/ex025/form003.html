@@ -24,7 +24,11 @@
 </head>
 <body>
     <h1>Form controls</h1>
-        <form action="register.php" method="post">
+        <form action="register.php" method="post" target="_blank" autocomplete="off">
+            <p>
+                <label for="iname">Complete name:</label>
+                <input type="text" name="Name" id="iname" minlength="10" placeholder="Your complete name" required size="25">
+            </p>
             <p>
                 <label for="iaverage">Average:</label>
                 <input type="number" name="average" id="iaverage" min="0" max="10" step=".2" placeholder="0 to 10" required>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form005</title>
+    <style>
+        body{
+            margin: auto;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        form{
+            margin: 100px;
+            margin-top: auto;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .center{
+            text-align: center;
+            background-color: rgb(240, 243, 255);
+        }
+        
+        fieldset{
+            background-color: rgb(240, 251, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Using Check Boxes</h1>
+    <form action="register.php" autocomplete="on" target="_blank">
+        <fieldset class="center"> <!-- For only choice -->
+            <legend style="text-align: left;">Genre</legend>
+                <label for="imale">Male</label>
+                <input type="radio" name="genre" id="imale" value="male">
+
+                <label for="ifemale">Female</label>
+                <input type="radio" name="genre" id="ifemale" value="female">
+        </fieldset>
+        <fieldset> <!-- For more choices -->
+            <legend>Sports</legend> 
+                <label for="ifut">Futball</label>
+                <input type="checkbox" name="sport" id="ifut">
+                <br>
+                <label for="ibask">Basketball</label>
+                <input type="checkbox" name="sport" id="ibask" checked>
+                <br>
+                <label for="ivoley">Voleyball</label>
+                <input type="checkbox" name="sport" id="ivoley">
+                <br>
+                <label for="ibase">Baseball</label>
+                <input type="checkbox" name="sport" id="ibase">
+                <br>
+                <label for="ihand">Handball</label>
+                <input type="checkbox" name="sport" id="ihand">
+                <br>
+                <label for="itennis">Tennis</label>
+                <input type="checkbox" name="sport" id="itennis">
+        </fieldset>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>

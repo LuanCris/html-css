@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form006</title>
+    <style>
+        *{
+            margin: 5px;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            margin: auto;
+        }
+
+        h1{
+            margin: 20px;
+            text-align: center;
+        }
+
+        .s:hover{
+            color: blue;
+            border: 1px solid blue;
+            background-color: rgb(0, 153, 255);  
+        }
+
+        .c:hover{
+            color: red;
+            border: 1px solid red;
+            background-color: rgb(255, 92, 92);
+        }
+    </style>
+</head>
+<body>
+    <h1>Aditional controls on "input"</h1>
+    
+    <form action="register.php" method="get" target="_blank">
+        <fieldset>
+        <legend>"color" and "range"</legend>
+            <label for="icolor">Color</label>
+            <input type="color" name="color" id="icolor" value="#0000ff">
+            <br>
+            <label for="irange">Range level</label>
+            <input type="range" name="rangelevel" id="irange" max="5" min="1" value="level on">
+        </fieldset>
+        
+        <fieldset>
+            <legend>"file" (files are not shown here)</legend>
+            <label for="ifile">Picture</label>
+            <input type="file" name="Picture" id="ifile">
+        </fieldset>
+
+        <input type="submit" value="Send" class="s" style="background-color: rgb(212, 238, 255); text-decoration: none; display: inline-block;  width: 100px;">
+        <input type="reset" value="Clear" class="c" style="background-color: rgb(255, 212, 212); text-decoration: none; display: inline-block;  width: 100px;">
+    </form>
+</body>
+</html>

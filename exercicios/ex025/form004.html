@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form004</title>
+    <style>
+        body{
+            background-color:white;
+        }
+
+        fieldset{
+            background-color: rgb(255, 255, 255);
+            border: 2px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controls and more 2 tag's</h1>
+
+            <form action="register.php" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>This is a requirement, complete your data</legend>
+                    <p>
+                        <label for="iname">Username:</label>
+                        <input type="text" name="Username" id="iname" autocomplete="username" maxlength="30" minlength="8" placeholder="Your complete name" size="30" required>
+                    </p>
+                    <p>
+                        <label for="iemail">e-mail:</label>
+                        <input type="email" name="e-mail" id="iemail" autocomplete="email" maxlength="30" minlength="15" placeholder="coninone00@outlook.com" size="30" required>
+                    </p>
+                    <p>
+                        <label for="ipassword">Password:</label>
+                        <input type="password" name="Password" id="ipassword" placeholder="Words, simbols and numbers" size="30" minlength="6" maxlength="30" required>
+                    </p>
+                    <p>
+                        <label for="itel">Phone: </label>
+                        <input type="tel" name="Phone" id="itel" placeholder="(xx) xxxx-xxxx" minlength="10" maxlength="14" size="14" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+                    </p>
+                    <!-- Learn more of the "RegEx" and "https" -->
+                </fieldset>
+                <p>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Clear">
+                </p>
+            </form>
+
+</body>
+</html>

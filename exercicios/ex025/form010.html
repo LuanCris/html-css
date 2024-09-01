@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form010</title>
+    <style>
+        *{
+            margin: 5px;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin: auto
+        }
+
+        fieldset{
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Exemple JS with age</h1>
+
+    <form action="register.php" method="post" autocomplete="off" target="_blank">
+        <fieldset>
+            <p>
+                <label for="iname"> Name:</label>
+                <input type="text" name="Name" id="iname" maxlength="30" size="30" placeholder="Your complete name" required>
+            </p>
+            <p>
+                <label for="iyear">What year is it?</label>
+                <input type="number" name="year" id="iyear" min="2004" max="2024" oninput="calculation ()">
+            </p>
+            <p>
+                <label for="iage">Your age:</label>
+                <output id="iage">0</output>
+            </p>
+        </fieldset>
+
+        <script>
+            function calculation(){
+                let current = new Date().getFullYear()
+                iage.innerHTML= Number(current) - Number(iyear.value)
+            }
+        </script>
+
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
 </body>
 </html>

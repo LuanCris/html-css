@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form007</title>
+    <style>
+        *{
+            margin: 5px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body{
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin: 20px;">New controls (But not "input" this time)</h1>
+
+        <form action="register.php" autocomplete="on" method="post" target="_blank">
+            <fieldset>
+                <legend>Send your massege to a city</legend>
+                <p>
+                    <label for="iselect">State:</label>
+                    <select name="select" id="iselect">
+                        <option value="" selected>-- Choose --</option>
+                        <optgroup label="North">
+                        <option value="">North Dakota</option>
+                        <option value="">Iowa</option>
+                        <option value="">Minnesota</option>
+                        </optgroup>
+                        <optgroup label="South">
+                        <option value="">Texas</option>
+                        <option value="">Louisiana</option>
+                        <option value="">New Mexico</option>
+                        </optgroup>
+                        <optgroup label="West">
+                        <option value="">California</option>
+                        <option value="">Arizona</option>
+                        <option value="">Oregon</option>
+                        </optgroup>
+                        <optgroup label="Lest">
+                        <option value="">North Carolina</option>
+                        <option value="">South Carolina</option>
+                        <option value="">Virginia</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="idatalist">City:</label>
+                    <input type="text" name="City" id="idatalist" list="icities">
+                    <datalist id="icities">
+                
+                       <option value="Minot"></option>
+                       <option value="Jamestown"></option>
+                       <option value="Dicknson"></option>
+                       <option value="Iowa City"></option>
+                       <option value="Des Moines"></option>
+                       <option value="Sioux City"></option>
+                       <option value="Brainerd"></option>
+                       <option value="Mineapolis"></option>
+                       <option value="Duluth"></option>
+                       <option value="Austin"></option>
+                       <option value="San Antonio"></option>
+                       <option value="Houston"></option>
+                       <option value="New Orleans"></option>
+                       <option value="Lake Charles"></option>
+                       <option value="Natchez"></option>
+                       <option value="Saint Faith"></option>
+                       <option value="Albuquerque"></option>
+                       <option value="Taos"></option>
+                       <option value="San Francisco"></option>
+                       <option value="San Diego"></option>
+                       <option value="Los Angeles"></option>
+                       <option value="Sedona"></option>
+                       <option value="Phoenix"></option>
+                       <option value="Tucson"></option>
+                       <option value="Portland"></option>
+                       <option value="New Port"></option>
+                       <option value="Bend"></option>
+                       <option value="Charlotte"></option>
+                       <option value="Asheville"></option>
+                       <option value="Wilmington"></option>
+                       <option value="Charleston"></option>
+                       <option value="Myrtle Beach"></option>
+                       <option value="Colúmbia"></option>
+                       <option value="Richmond"></option>
+                       <option value="Williamsburg"></option>
+                       <option value="Norfolk"></option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="itext">Text message:</label>
+                    <br>
+                    <textarea name="txtmsg" id="itext" cols="30" rows="15"></textarea>
+                </p>
+            </fieldset>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form008</title>
+</head>
+<body>
+    <h1>Lenguage JavaScript on output</h1>
+
+    <form action="register.php" method="post" autocomplete="on">
+    <fieldset>
+        <legend>Sum numbers with JS</legend>
+        <label for="in1">Number 1:</label>
+        <input type="number" name="number" id="in1" min="0" max="50" required oninput="isum.innerHTML=Number(in1.value)+Number(in2.value)">
+            <br>
+        <label for="in2">Number 2:</label>
+        <input type="number" name="number" id="in2" min="0" max="50" required oninput="isum.innerHTML=Number(in1.value)+Number(in2.value)">
+            <br>
+        <label for="isum">Sum:</label>
+        <output name="sum" id="isum">0</output>
+            <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form009</title>
+</head>
+<body>
+    <h1>Range with JS </h1>
+
+    <form action="register.php" autocomplete="on" method="post">
+    <label for="inum">Range</label>
+    <input type="range" name="num" id="inum" min="0" max="10" oninput="ival.innerHTML=Number (inum.value)">
+    <output id="ival">5</output>
+    <br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Clear">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* FOR SCREEN */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    background-color: rgb(210, 233, 255);
+}
+
+header{
+    padding-bottom: 8px;
+    background-color: indigo;
+    color: white;
+}
+
+header h1{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    vertical-align: top;
+}
+
+header ul{
+    display: inline;
+}
+
+header a{
+    color: white;
+    font-size: 1em;
+    padding: 0px 8px 8px 5px;
+    border-radius: 6px 6px 0px 0px;   
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(76, 91, 176);
+    transition: background-color 0.5s;
+}
+
+article{
+    background-color: white;
+    max-width: 700px;
+    min-width: 200px;
+    margin:auto;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 1.8em;
+}
+
+article h2{
+    background-image:linear-gradient( to right,rgba(145, 202, 255, 0.404), white);
+    text-align: left;
+    margin: 10px;
+    margin-left: 0px;
+    line-height: normal;
+}
+
+article p{
+    padding: 0px 20px;
+}
+

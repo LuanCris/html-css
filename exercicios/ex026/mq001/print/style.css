@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* FOR PRINTS */
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    padding: auto;
+}
+
+html{
+    margin: 25px;
+    padding: 25px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+header{
+    background-color: deepskyblue;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+h2{
+    margin: 3px;
+    padding: 3px;
+}
+
+p{
+    margin: 7px;
+    text-indent: 1.3em;
+}
+
+article::after{
+    content: "site criado por Luan Cris: https://github.com/LuanCris";
+    display: block;
+    font-size: 0.7em;
+    margin-top: 5px;
+    font-weight: bolder;
+}
+
+menu{
+    display: none;
+}
+
+footer{
+    display: none;
+}
+
+
+

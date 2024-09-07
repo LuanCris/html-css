@@ -10,20 +10,22 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
-    background-color: rgb(210, 233, 255);
+    background-color: rgb(185, 221, 255);
 }
 
 header{
-    padding-bottom: 8px;
+    
     background-color: indigo;
     color: white;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 header h1{
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 30px;
-    vertical-align: top;
+    padding: 8px;
+    margin: 15px 20px 30px 20px;
+    vertical-align: middle;
 }
 
 header ul{
@@ -32,14 +34,14 @@ header ul{
 
 header a{
     color: white;
-    font-size: 1em;
-    padding: 0px 8px 8px 5px;
+    font-size: .8em;
+    padding: 0px 10px 9.5px 8px;
     border-radius: 6px 6px 0px 0px;   
     text-decoration: none;
 }
 
 a:hover{
-    background-color: rgb(76, 91, 176);
+    background-color: rgb(93, 117, 255);
     transition: background-color 0.5s;
 }
 
@@ -48,15 +50,17 @@ article{
     max-width: 700px;
     min-width: 200px;
     margin:auto;
+    margin-bottom: 80px;
     padding-top: 10px;
     padding-bottom: 40px;
     text-align: justify;
     text-indent: 1.5em;
     line-height: 1.8em;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.273);
 }
 
 article h2{
-    background-image:linear-gradient( to right,rgba(145, 202, 255, 0.404), white);
+    background-image:linear-gradient( to right,rgba(180, 226, 255, 0.644), white);
     text-align: left;
     margin: 10px;
     margin-left: 0px;
@@ -64,6 +68,20 @@ article h2{
 }
 
 article p{
-    padding: 0px 20px;
+    padding: 0px 40px;
+}
+
+footer{
+    background-color: indigo;
+    font-size: .9em;
+    text-align: center;
+    padding: 8px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    border-radius: 6px 6px 6px 6px;
+    padding: 5px;
 }
 

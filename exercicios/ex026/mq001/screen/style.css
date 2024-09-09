@@ -9,7 +9,7 @@
 
 body{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2em;
+    font-size: 1em;
     background-color: rgb(185, 221, 255);
 }
 
@@ -35,7 +35,7 @@ header ul{
 header a{
     color: white;
     font-size: .8em;
-    padding: 0px 10px 9.5px 8px;
+    padding: 0px 10px 9px 8px;
     border-radius: 6px 6px 0px 0px;   
     text-decoration: none;
 }

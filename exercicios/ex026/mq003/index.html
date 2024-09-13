@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mq003</title>
+    <style>
+        /* ALL */
+        @media screen  {
+          *{
+            margin: auto;
+            padding: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body, html{
+            width: 100vw;
+            height: 100vh;
+            background-color:#233EFF;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        h1{
+            color: white;
+            padding: 10px;
+            text-shadow: 2px 2px 0px rgb(0, 0, 155);
+        }  
+        }
+        
+        /* PORTRAIT */
+        @media screen and (orientation: portrait){
+            body, html{
+            background-image: url(images/cev-portrait.jpg);
+            background-position: center bottom;
+        }
+        }
+
+        /* LANDSCAPE */
+        @media screen and (orientation: landscape){
+            body, html{
+            background-image: url(images/cev-landscape.jpg);
+            background-position: left bottom;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>Change your screen orientation</h1>
+</body>
+</html>

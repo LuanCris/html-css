@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* ALL ANOTHERS MEDIAS */
+
+/* TYPICAL DEVICE BREAKPOINTS
+> EXTRA SMALL (PHONE, 600PX AND DOWN): MAX-WIDTH: 600PX.
+> SMALL (PORTRAIT TABLETS AND LARGE PHONES, 600PX AND UP): MIN WIDTH: 600PX.
+> MEDIUM (LANDSCAPE TABLETS, 768PX AND UP): MIN-WIDTH: 768PX.
+> LARGE (LAPTOPS/DASKTOPS, 992PX AND UP): MIN-WIDTH: 992PX.
+> EXTRA LARGE (LARGE LAPTOPS AND DESKTOPS, 1200PX AND UP): MIN-WIDTH: 1200PX.
+*/
+
+ @media print {/*PRINT/PAPER*/
+    main{
+        padding: 30px;
+        border: 1px solid black;
+
+    }
+    main h1{
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2;
+    }
+    body::before{
+        content: "this page was printed on the website luancris.github.io";
+        font-weight: bold;
+        text-align: center;
+        font-size: .8em;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width:600px) {/*TABLETS */
+    body{
+        background-image: url(../images/back-tablet.jpg);
+    }
+    main{
+        width: 350px;
+    }
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width:992px) {/* PC's */
+    body{
+        background-image: url(../images/back-pc.jpg);
+    }
+    main{
+        width: 400px;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width:1200px) {/* TV's */
+    body{
+        background-image: url(../images/back-tv.jpg);
+    }
+    main{
+        width: 450px;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}

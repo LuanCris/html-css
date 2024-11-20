@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    /*COLORS*/
+    --color001: rgb(185, 213, 216);
+    --color002: rgb(117, 182, 182);
+    --color003: rgb(223, 255, 255);
+    --color004: rgb(134, 229, 229);
+
+    /*SHADOWS BOXES*/
+    --shadow001: rgba(0, 0, 0, 0.150);
+    --shadow002: rgba(0, 0, 0, 0.100);
+}
+body{
+    background-color: var(--color001);
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    background-color: var(--color004);
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 8px;
+    border: 10px solid var(--color002);
+    box-shadow: 1px 2px 3px var(--shadow002);
+}
+form{
+    margin: auto;
+    max-width: 500px;
+    padding: 5px;
+}
+main{
+    background-color: var(--color002);
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 60px;
+    max-width: 600px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 3px var(--shadow002);
+}
+article{
+    background-color: var(--color003);
+    padding: 15px;
+}
+#yes{
+    background-color: var(--color002);
+    
+}
+nav{
+    background-color: var(--color004);
+    text-align: center;
+    box-shadow: 2px 1px 3px var(--shadow001);
+}

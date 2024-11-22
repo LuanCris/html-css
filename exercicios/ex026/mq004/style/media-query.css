@@ -3,17 +3,24 @@
 /* ALL ANOTHERS MEDIAS */
 
 /* TYPICAL DEVICE BREAKPOINTS
+
 > EXTRA SMALL (PHONE, 600PX AND DOWN): MAX-WIDTH: 600PX.
 > SMALL (PORTRAIT TABLETS AND LARGE PHONES, 600PX AND UP): MIN WIDTH: 600PX.
 > MEDIUM (LANDSCAPE TABLETS, 768PX AND UP): MIN-WIDTH: 768PX.
 > LARGE (LAPTOPS/DASKTOPS, 992PX AND UP): MIN-WIDTH: 992PX.
 > EXTRA LARGE (LARGE LAPTOPS AND DESKTOPS, 1200PX AND UP): MIN-WIDTH: 1200PX.
+
 */
 
  @media print {/*PRINT/PAPER*/
     main{
         padding: 30px;
         border: 1px solid black;
+        text-align:center ;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
     }
     main h1{

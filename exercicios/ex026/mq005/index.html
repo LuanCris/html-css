@@ -12,8 +12,8 @@
     <h1>
         World News
     </h1>
-    <i id="burguer" class="material-symbols-outlined">menu</i>
-    <menu>
+    <i id="burguer" class="material-symbols-outlined" onclick="(clickMenu)">menu</i>
+    <menu id="itens">
         <ul>
             <li><a href="#">Politic Terms</a></li>
             <li><a href="#">Contact</a></li>
@@ -62,6 +62,15 @@
             To complicate matters further, Trump’s offer might also appeal to some of Russia’s influential partners—not to mention a significant part of war-weary Russian society. Trump’s victory in the U.S. election effectively was Russia’s “plan for victory” in Ukraine. The Russian elite was hoping for precisely this turn of events, because in the global scheme of things, it’s hard to achieve anything greater than a new occupant in the White House who is ready to talk and listen to Russia’s arguments, including about amending the world order and making concessions in Europe. And if even a proposal from that same U.S. president is rejected by Putin, then it means the demise of the Russian “plan for victory” and any remote prospect of ending the war. And judging by the mood of Vladimir Putin, that’s exactly what will happen.
         </p>
     </article>
-</main>   
+</main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

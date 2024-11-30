@@ -15,24 +15,29 @@ header{
     text-align: center;
 }
 
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
-
-
 header h1{
     color: rgb(65, 65, 65);
     padding: 20px 0px 35px 0px;
 }
 
+#burguer{
+    color: lightgray; 
+    background-color: rgb(65, 65, 65);
+    display: block;
+    margin: auto;
+    padding: 7px;
+    cursor: pointer;
+}
+
+#burguer:hover{
+    color:white;
+    background-color: black;
+    transition-duration: 1s;
+}
+
 menu{
     display: block;
+    display: none;
 }
 
 menu ul{
@@ -51,8 +56,8 @@ menu a{
 }
 
 menu a:hover{
-    background-color:white ;
-    color: black;
+    color:white;
+    background-color: black;
     transition-duration: 1s;
 }
 

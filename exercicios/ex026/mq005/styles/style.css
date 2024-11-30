@@ -13,16 +13,17 @@ body{
 header{
     background-color: gray;
     text-align: center;
+    box-shadow: 2px 1px 3px 4px rgba(0, 0, 0, 0.129);
 }
 
 header h1{
-    color: rgb(65, 65, 65);
+    color: rgb(51, 51, 51);
     padding: 20px 0px 35px 0px;
 }
 
 #burguer{
     color: lightgray; 
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(51, 51, 51);
     display: block;
     margin: auto;
     padding: 7px;
@@ -36,7 +37,6 @@ header h1{
 }
 
 menu{
-    display: block;
     display: none;
 }
 
@@ -70,6 +70,7 @@ main{
     margin-bottom: 15px;
     padding: 8px;
     border-radius: 8px;
+    box-shadow: 2px 1px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 article h2{

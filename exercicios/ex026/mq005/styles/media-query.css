@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*MEDEIA QUERIES
+TYPICAL DEVICE BREAKPOINTS
+
+> EXTRA SMALL (PHONE, 600PX AND DOWN): MAX-WIDTH: 600PX.
+> SMALL (PORTRAIT TABLETS AND LARGE PHONES, 600PX AND UP): MIN WIDTH: 600PX.
+> MEDIUM (LANDSCAPE TABLETS, 768PX AND UP): MIN-WIDTH: 768PX.
+> LARGE (LAPTOPS/DASKTOPS, 992PX AND UP): MIN-WIDTH: 992PX.
+> EXTRA LARGE (LARGE LAPTOPS AND DESKTOPS, 1200PX AND UP): MIN-WIDTH: 1200PX.
+*/
+
+@media screen and (min-width: 768px) {
+    #burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+        text-align: left;
+    }
+    menu ul li{
+        text-align: left;
+        display: inline-block;
+
+    }
+    menu a{
+        border-radius: 6px 6px 0px 0px;
+    }
+    main{
+        max-width: 700px;
+        min-width: 270px;
+    }
+}

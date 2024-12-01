@@ -18,13 +18,17 @@ TYPICAL DEVICE BREAKPOINTS
         display: block;
         text-align: left;
     }
-    menu ul li{
+    header menu ul li{
         text-align: left;
         display: inline-block;
 
     }
+    ul{
+        text-align: left;
+    }
     menu a{
         border-radius: 6px 6px 0px 0px;
+        background-position: left left;
     }
     main{
         max-width: 700px;

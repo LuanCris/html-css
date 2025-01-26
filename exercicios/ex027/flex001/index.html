@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .father{
+            background-color: darkblue;
+            
+            display: flex;
+        }
+        .son{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox test</h1>
+    <div class="father">
+        <div class="son">I</div>
+        <div class="son">II</div>
+        <div class="son">III</div>
+        <div class="son">IV</div>
+        <div class="son">V</div>
+        <div class="son">VI</div>
+        <div class="son">VII</div>
+        <div class="son">VIII</div>
+        <div class="son">IX</div>
+        <div class="son">X</div>
+    </div>
+</body>
+</html>

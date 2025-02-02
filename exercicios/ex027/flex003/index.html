@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .father{
+            background-color: darkgreen;
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+            display: flex;
+        }
+        .father1{
+            background-color: darkgreen;
+
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            display: flex;
+        }
+        .father2{
+            background-color: darkgreen;
+
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 120px;
+            display: flex;
+        }
+        .father3{
+            background-color: darkgreen;
+
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            height: 120px;
+            display: flex;
+        }
+        .father4{
+            background-color: darkgreen;
+            
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            display: flex;
+        }
+        .father5{
+            background-color: darkgreen;
+
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+            display: flex;
+        }
+        .father6{
+            background-color: darkgreen;
+
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+            height: 120px;
+            display: flex;
+        }
+        .father7{
+            background-color: darkgreen;
+
+            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+            height: 120px;
+            display: flex;
+        }
+        .father8{
+            background-color: darkgreen;
+
+            flex-flow: row-reverse wrap-reverse;
+            display: flex;
+        }
+        .son{
+            background-color: lightgreen;
+            color:darkgreen;
+            border: 1px solid white;
+            text-align: center;
+            padding: 5px;
+            width: 200px;
+
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox wrap test</h1>
+    <h2>flex direction:row</h2>
+    <div class="father">
+        <div class="son">EXAMPLE OF I</div>
+        <div class="son">EXAMPLE OF II</div>
+        <div class="son">EXAMPLE OF III</div>
+        <div class="son">EXAMPLE OF IV</div>
+        <div class="son">EXAMPLE OF V</div>
+    </div>
+    <br>
+    <h2>flex direction:row-reverse</h2>
+    <div class="father1">
+        <div class="son">EXAMPLE OF I</div>
+        <div class="son">EXAMPLE OF II</div>
+        <div class="son">EXAMPLE OF III</div>
+        <div class="son">EXAMPLE OF IV</div>
+        <div class="son">EXAMPLE OF V</div>
+        
+    </div>
+    <br>
+    <h2>flex direction:column</h2>
+    <div class="father2">
+        <div class="son">EXAMPLE OF I</div>
+        <div class="son">EXAMPLE OF II</div>
+        <div class="son">EXAMPLE OF III</div>
+        <div class="son">EXAMPLE OF IV</div>
+        <div class="son">EXAMPLE OF V</div>
+    </div>
+    <br>
+    <h2>flex direction:column-reverse</h2>
+    <div class="father3">
+        <div class="son">EXAMPLE OF I</div>
+        <div class="son">EXAMPLE OF II</div>
+        <div class="son">EXAMPLE OF III</div>
+        <div class="son">EXAMPLE OF IV</div>
+        <div class="son">EXAMPLE OF V</div>
+    </div>
+    <br>
+    <h1>Flexbox wrap-reverse test</h1>
+    <h2>flex direction:row</h2>
+    <div class="father4">
+        <div class="son">EXAMPLE OF I</div>
+        <div class="son">EXAMPLE OF II</div>
+        <div class="son">EXAMPLE OF III</div>
+        <div class="son">EXAMPLE OF IV</div>
+        <div class="son">EXAMPLE OF V</div>
+    </div>
+    <br>
+    <h2>flex direction:row-reverse</h2>
+    <div class="father5">
+        <div class="son">EXAMPLE OF I</div>
+        <div class="son">EXAMPLE OF II</div>
+        <div class="son">EXAMPLE OF III</div>
+        <div class="son">EXAMPLE OF IV</div>
+        <div class="son">EXAMPLE OF V</div>
+        
+    </div>
+    <br>
+    <h2>flex direction:column</h2>
+    <div class="father6">
+        <div class="son">EXAMPLE OF I</div>
+        <div class="son">EXAMPLE OF II</div>
+        <div class="son">EXAMPLE OF III</div>
+        <div class="son">EXAMPLE OF IV</div>
+        <div class="son">EXAMPLE OF V</div>
+        
+    </div>
+    <br>
+    <h2>flex direction:column-reverse</h2>
+    <div class="father7">
+        <div class="son">EXAMPLE OF I</div>
+        <div class="son">EXAMPLE OF II</div>
+        <div class="son">EXAMPLE OF III</div>
+        <div class="son">EXAMPLE OF IV</div>
+        <div class="son">EXAMPLE OF V</div>
+    </div>
+    <br>
+    <h1>Flex flow row-reverse wrap-reverse test</h1>
+    <div class="father8">
+        <div class="son">EXAMPLE OF I</div>
+        <div class="son">EXAMPLE OF II</div>
+        <div class="son">EXAMPLE OF III</div>
+        <div class="son">EXAMPLE OF IV</div>
+        <div class="son">EXAMPLE OF V</div>
+    </div>
+</body>
+</html>

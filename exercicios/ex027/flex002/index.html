@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .father{
+            background-color: darkblue;
+            
+            flex-direction: row;
+            display: flex;
+        }
+        .father1{
+            background-color: darkblue;
+
+            flex-direction: row-reverse;
+            display: flex;
+        }
+        .father2{
+            background-color: darkblue;
+
+            flex-direction: column;
+            display: flex;
+        }
+        .father3{
+            background-color: darkblue;
+
+            flex-direction: column-reverse;
+            display: flex;
+        }
+        .son{
+            background-color: blue;
+            color: white;
+            border: 1px solid lightskyblue;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox direction test</h1>
+    <h2>flex direction:row</h2>
+    <div class="father">
+        <div class="son">I</div>
+        <div class="son">II</div>
+        <div class="son">III</div>
+        <div class="son">IV</div>
+        <div class="son">V</div>
+        <div class="son">VI</div>
+        <div class="son">VII</div>
+        <div class="son">VIII</div>
+        <div class="son">IX</div>
+        <div class="son">X</div>
+    </div>
+    <br>
+    <h2>flex direction:row-reverse</h2>
+    <div class="father1">
+        <div class="son">I</div>
+        <div class="son">II</div>
+        <div class="son">III</div>
+        <div class="son">IV</div>
+        <div class="son">V</div>
+        <div class="son">VI</div>
+        <div class="son">VII</div>
+        <div class="son">VIII</div>
+        <div class="son">IX</div>
+        <div class="son">X</div>
+    </div>
+    <br>
+    <h2>flex direction:column</h2>
+    <div class="father2">
+        <div class="son">I</div>
+        <div class="son">II</div>
+        <div class="son">III</div>
+        <div class="son">IV</div>
+        <div class="son">V</div>
+        <div class="son">VI</div>
+        <div class="son">VII</div>
+        <div class="son">VIII</div>
+        <div class="son">IX</div>
+        <div class="son">X</div>
+    </div>
+    <br>
+    <h2>flex direction:column-reverse</h2>
+    <div class="father3">
+        <div class="son">I</div>
+        <div class="son">II</div>
+        <div class="son">III</div>
+        <div class="son">IV</div>
+        <div class="son">V</div>
+        <div class="son">VI</div>
+        <div class="son">VII</div>
+        <div class="son">VIII</div>
+        <div class="son">IX</div>
+        <div class="son">X</div>
+    </div>
+</body>
+</html>

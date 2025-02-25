@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .father{
+            background-color: darkblue;
+            
+            flex-flow: row wrap;
+            display: flex;
+            align-content: flex-start;
+            height: 500px;
+        }
+        .father1{
+            background-color: darkblue;
+
+            flex-flow: row wrap;
+            display: flex;
+            align-content: center;
+            height: 500px;
+        }
+        .father2{
+            background-color: darkblue;
+
+            flex-flow: row wrap;
+            display: flex;
+            align-content: flex-end;
+            height: 500px;
+        }
+        .father3{
+            background-color: darkblue;
+
+            flex-flow: row wrap;
+            display: flex;
+            align-content: space-between;
+            height: 500px;
+        }
+        .father4{
+            background-color: darkblue;
+
+            flex-flow: row wrap;
+            display: flex;
+            align-content: space-around;
+            height: 500px;
+        }
+        .father5{
+            background-color: darkblue;
+
+            flex-flow: row wrap;
+            display: flex;
+            align-content: space-evenly;
+            height: 500px;
+        }
+        
+        .son{
+            background-color: white;
+            color: blue;
+            border: 1px solid blue;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox content test</h1>
+    <h2>flex flow:row nowrap + align-content:start</h2>
+    <div class="father">
+        <div class="son">I</div>
+        <div class="son">II</div>
+        <div class="son">III</div>
+        <div class="son">IV</div>
+        <div class="son">V</div>
+        <div class="son">VI</div>
+        <div class="son">VII</div>
+        <div class="son">VIII</div>
+        <div class="son">IX</div>
+        <div class="son">X</div>
+    </div>
+    <br>
+    <h2>flex flow:row wrap + align-content:center</h2>
+    <div class="father1">
+        <div class="son">I</div>
+        <div class="son">II</div>
+        <div class="son">III</div>
+        <div class="son">IV</div>
+        <div class="son">V</div>
+        <div class="son">VI</div>
+        <div class="son">VII</div>
+        <div class="son">VIII</div>
+        <div class="son">IX</div>
+        <div class="son">X</div>
+    </div>
+    <br>
+    <h2>flex flow:row wrap + align-content:end</h2>
+    <div class="father2">
+        <div class="son">I</div>
+        <div class="son">II</div>
+        <div class="son">III</div>
+        <div class="son">IV</div>
+        <div class="son">V</div>
+        <div class="son">VI</div>
+        <div class="son">VII</div>
+        <div class="son">VIII</div>
+        <div class="son">IX</div>
+        <div class="son">X</div>
+    </div>
+    <br>
+    <h2>flex flow:row wrap + align-content:space-between</h2>
+    <div class="father3">
+        <div class="son">I</div>
+        <div class="son">II</div>
+        <div class="son">III</div>
+        <div class="son">IV</div>
+        <div class="son">V</div>
+        <div class="son">VI</div>
+        <div class="son">VII</div>
+        <div class="son">VIII</div>
+        <div class="son">IX</div>
+        <div class="son">X</div>
+    </div>
+    <h2>flex flow:row wrap + align-content:space-around</h2>
+    <div class="father4">
+        <div class="son">I</div>
+        <div class="son">II</div>
+        <div class="son">III</div>
+        <div class="son">IV</div>
+        <div class="son">V</div>
+        <div class="son">VI</div>
+        <div class="son">VII</div>
+        <div class="son">VIII</div>
+        <div class="son">IX</div>
+        <div class="son">X</div>
+    </div>
+    <h2>flex flow:row wrap + align-content:space-evenly </h2>
+    <div class="father5">
+        <div class="son">I</div>
+        <div class="son">II</div>
+        <div class="son">III</div>
+        <div class="son">IV</div>
+        <div class="son">V</div>
+        <div class="son">VI</div>
+        <div class="son">VII</div>
+        <div class="son">VIII</div>
+        <div class="son">IX</div>
+        <div class="son">X</div>
+    </div>
+    <h1>GRATEFUL</h1>
+</body>
+</html>

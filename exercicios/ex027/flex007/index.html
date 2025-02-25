@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .father{
+            background-color: white;
+            border: 2px solid darkblue; 
+            padding: 20px;
+            display: flex;
+            height: 200px;
+        }
+
+        .son0{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            order: 8;
+            align-self: stretch;
+            flex: auto;
+            padding: 10px;
+            align-content: center;
+        }
+        .son1{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            order: 1;
+            flex:auto;
+            padding: 10px;
+            align-content: center;
+            align-self: center; 
+        }
+        .son2{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            order: -1;
+            flex:auto;
+            padding: 10px;
+            align-content: center; 
+            align-self: flex-start;
+        }
+        .son3{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            order: 1;
+            flex:auto;
+            padding: 10px;
+            align-content: center;
+            align-self: flex-end; 
+        }
+        .son4{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            flex: auto;
+            order: 3;
+            padding: 10px;
+            align-content: center;
+            align-self: center; 
+        }
+        .son5{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            order: -4;
+            flex:auto;
+            padding: 10px;
+            align-content: center; 
+            align-self: auto;
+        }
+        .son6{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            order: 5;
+            flex:auto;
+            padding: 10px;
+            align-content: center; 
+            align-self: flex-start;
+        }
+        .son7{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            order: -1;
+            flex:auto;
+            padding: 10px;
+            align-content: center;
+            align-self: center; 
+        }
+        .son8{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            flex: auto;
+            order: -1;
+            padding: 10px;
+            align-content: center;
+            align-self: flex-end; 
+        }
+        .son9{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            order: 0;
+            flex:auto;
+            padding: 10px;
+            align-content: center; 
+            align-self: flex-start;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Flexbox order and align-self test</h1>
+    <div class="father">
+        <div class="son0">I</div>
+        <div class="son1">II</div>
+        <div class="son2">III</div>
+        <div class="son3">IV</div>
+        <div class="son4">V</div>
+        <div class="son5">VI</div>
+        <div class="son6">VII</div>
+        <div class="son7">VIII</div>
+        <div class="son8">IX</div>
+        <div class="son9">X</div>
+    </div>
+
+</body>
+</html>

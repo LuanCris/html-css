@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .father{
+            background-color: darkblue;
+            
+            display: flex;
+
+            border-radius: 2%;
+        }
+        .son{
+            background-color: blue;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            margin: 5px 5px ;
+            padding: 10px;
+
+            flex-basis: 300px;
+            flex-shrink: 1;
+            flex-grow: 1;
+            
+            border-radius: 2%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox test</h1>
+    <h2>flex shrink and grow</h2>
+    <div class="father">
+        <div class="son" id="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vel qui odit voluptatibus recusandae expedita sed corporis perferendis adipisci quae alias exercitationem fugiat soluta, ipsam iusto libero ratione facere quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo exercitationem laudantium, asperiores consequuntur omnis optio libero, ipsum incidunt, error neque quas! Perspiciatis cupiditate cumque officia dolores asperiores, placeat voluptas exercitationem.</div>
+        <div class="son" id="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellendus, magni minus reprehenderit aspernatur nulla explicabo aliquid ea deserunt eaque voluptas quisquam sed inventore eligendi ipsam debitis cumque voluptatum exercitationem!</div>
+        <div class="son" id="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nulla modi voluptates earum, incidunt iste delectus tempore voluptas ea temporibus suscipit, consequuntur quos rerum. Odit dolorem iusto dolore nostrum debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo delectus earum temporibus corporis. Eius, laborum cumque aliquid autem consectetur fuga fugiat possimus consequatur ratione dolorem! Est recusandae eius incidunt?</div>
+    </div>
+</body>
+</html>

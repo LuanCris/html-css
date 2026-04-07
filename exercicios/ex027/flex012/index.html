@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .father{
+            background-color: darkblue;
+            
+            display: flex;
+
+            border-radius: 2%;
+
+            flex-flow: nowrap;
+        }
+        .son{
+            
+        }
+        #Tobey{
+            background-color: red;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            margin: 5px 5px ;
+            padding: 10px;
+
+            /*flex-basis: 200px;
+            flex-shrink: 4;
+            flex-grow: 1;*/
+
+            flex: 1 4 200px;
+        }
+        #Andrew{
+            background-color: red;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            margin: 5px 5px ;
+            padding: 10px;
+
+            /*flex-basis: 200px;
+            flex-shrink: 3;
+            flex-grow: 2;*/
+
+            flex: 2 3 150px;
+        }
+        #Tom{
+            background-color: red;
+            color: white;
+            border: 1px solid darkblue;
+            text-align: center;
+            margin: 5px 5px ;
+            padding: 10px;
+
+            /*flex-basis: auto;
+            flex-shrink: 2;
+            flex-grow: 3;*/
+
+            flex: 3 2 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox test</h1>
+    <h2>blending flex shrink and grow in shorthand</h2>
+    <div class="father">
+        <div class="son" id="Tobey">I</div>
+        <div class="son" id="Andrew">II</div>
+        <div class="son" id="Tom">III</div>
+        
+    </div>
+</body>
+</html>

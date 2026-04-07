@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-body{
-    min-width: 97vw;
-    max-width: 97vw;
-}
-
 header, header > nav{
     flex-flow: column nowrap;
 }

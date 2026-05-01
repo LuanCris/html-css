@@ -65,6 +65,15 @@ header > nav > a:hover{
     transition-duration: .7s;
 }
 
+div{
+    background-color: var(--cor00);
+    text-align: center;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.156);
+}
+
 main{
     background-color: var(--cor00);
     text-indent: 1em;

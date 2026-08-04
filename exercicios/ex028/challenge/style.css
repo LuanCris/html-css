@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #6200ff;
+    --secondary-color: #9553ff;
+    --tertiary-color: #3e00a1;
+    --quaternary-color: #270162;
+    --text-color: #ffffff;
+    --background-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: grid;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  
+}
+
+main {
+    
+    padding: 10px;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-auto-column: 1fr;
+
+    #challenge {
+        background-color: var(--quaternary-color);
+        color: var(--text-color);
+        padding: 20px;
+
+        grid-area: 1 / 1 / 5 / 4;
+    }
+
+    #advertisement {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        padding: 20px;
+
+        grid-area: 1 / 4 / 3 / 5;
+    }
+    #advertisement2 {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        padding: 20px;
+
+        grid-area: 3 / 4 / 5 / 5;
+    }
+}
+
+footer {
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+}
